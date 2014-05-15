@@ -32,7 +32,7 @@ def text_to_speech(text):
 
     data = urllib2.urlopen(request).read()
     path = mp3_file_create(data)
-    call(["open", path])
+    call(["play", path])
 
 def main():
     word_count = len(sys.argv)
